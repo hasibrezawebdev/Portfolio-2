@@ -134,9 +134,9 @@ main p span{
 
 #skillsIcon{
     display: grid;
-    grid-template-columns: repeat(3, 125px);
-    grid-template-rows: repeat(2, 125px);
-    grid-gap: 40px 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 40px 0;
     align-items: center;
     justify-items: center;
 }
@@ -287,9 +287,9 @@ main p span{
     }
 
     #skillsIcon{
-        grid-template-columns: repeat(3, 66px);
-        grid-template-rows: repeat(2, 66px);
-        grid-gap: 30px 12px;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 30px 0;
     }
 
     #skillsIcon img{
