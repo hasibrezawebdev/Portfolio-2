@@ -3,6 +3,7 @@ let navUl= document.querySelector("#navUl");
 let home = document.querySelector("#hm");
 let about = document.querySelector("#abt");
 let skills = document.querySelector("#skl");
+let education = document.querySelector("#edu");
 let menuIcon = document.querySelector("#menuIcon");
 let mobileNav = document.querySelector("#mobileNav").style;
 
@@ -27,3 +28,4 @@ home.addEventListener("click", removeClass);
 menuIcon.addEventListener("click", navBarToggle);
 about.addEventListener("click", removeClass);
 skills.addEventListener("click", removeClass);
+education.addEventListener("click", removeClass);

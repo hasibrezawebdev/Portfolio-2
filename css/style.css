@@ -61,7 +61,7 @@ nav li:hover{
     height: 80px;
 }
 
-main, #about, #skills {
+main, #about, #skills, #education {
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -75,7 +75,7 @@ main, #about, #skills {
 
 }
 
-.mainContent, .aboutContent, .skillsContent{
+.mainContent, .aboutContent, .skillsContent, .educationContent{
     max-width: 1280px;
     width: 100%;
     display: grid;
@@ -85,7 +85,7 @@ main, #about, #skills {
 
 }
 
-main img, #about img{
+main img, #about img, #education img{
     width: 450px;
 }
 
@@ -99,24 +99,29 @@ main p span{
     border-radius: 25px;
 }
 
-#about{
+#about, #education{
     background: #FE6F6D;
-    /* all the other part are in line no 78 in main */
+    /* all the other part are in line no 64 in main */
 }
 
-.aboutContent div, .skillsContent div{
+/* #about img in in line no 88 with main img */
+
+/* .aboutContent is in line no 78 with .mainContent */
+
+
+.aboutContent div, .skillsContent div, .educationContent div{
     width: 450px;
     text-align: right;
     color: #ffffff;
 }
 
-.aboutContent h2, .skillsContent h2{
+.aboutContent h2, .skillsContent h2, .educationContent h2{
     font-size: 55px;
     font-weight: 500;
     margin: 0;
 }
 
-.aboutContent p, .skillsContent p{
+.aboutContent p, .skillsContent p, .educationContent p{
     font-size: 27px;
     font-weight: 500;
     margin: 0;
@@ -129,8 +134,10 @@ main p span{
 
 #skills{
     background: none;
-    /* all the other part are in line no 78 in main */
+    /* all the other part are in line no 64 in main */
 }
+
+/* .skillsContent is in line no 78 with .mainContent */
 
 #skillsIcon{
     display: grid;
@@ -144,6 +151,14 @@ main p span{
 #skillsIcon img{
     width: 125px;
 }
+
+/* #education is in line no 64 with main */
+/* .educationContent is in line no 78 with .mainContent */
+/* #education img is in line no 88 with main img */
+/* #education is in line on 102 with #about */
+/* .educationContent div is in line no 112 with .aboutContent div */
+/* .educationContent h2 is in line no 118 with .aboutContent h2 */
+/* .educationContent p is in line no 124 with .aboutContent p */
 
 @media screen and (max-width: 979px) {
     
@@ -182,7 +197,7 @@ main p span{
         align-items: center;
     }
     
-    main p, .aboutContent div{
+    main p{
         text-align: center;
         
     }
@@ -214,17 +229,21 @@ main p span{
         background-size: cover;
         background-position: center top;
     }
-    .aboutContent div:first-child, .skillsContent div{
+    .aboutContent div:first-child, .skillsContent div, .educationContent div:first-child{
         margin-bottom: 50px;
         text-align: center;
     }
-    
-    .aboutContent div:nth-of-type(2){
+    .aboutContent div:nth-of-type(2), .educationContent div:nth-of-type(2){
         order: 1;
     }
-    .aboutContent div:nth-of-type(1){
+    .aboutContent div:nth-of-type(1), .educationContent div:nth-of-type(1){
         order: 2;
     }
+
+    /* .skillsContent div is in line no 224 with .aboutContent div:first-child */
+    /* .educationContent div:first-child is in line no 232 with .aboutContent div:first-child */
+    /* .educationContent div:nth-of-type(2) is in line no 236 with .aboutContent:div:nth-of-type(2) */
+    /* .educationContent div:nth-of-type(1) is in line no 239 with .aboutContent:div:nth-of-type(1) */
     
 }
 
@@ -248,12 +267,12 @@ main p span{
         height: 80px;
     }
 
-    .mainContent, .aboutContent, .skillsContent{
+    .mainContent, .aboutContent, .skillsContent, .educationContent{
         grid-template-columns: 100%;
     
     }
     
-    main img, #about img{
+    main img, #about img, #education img{
         width: 250px;
     }
     
@@ -266,25 +285,35 @@ main p span{
         padding: 0 5px;
         border-radius: 8px;
     }
-    .aboutContent div, .skillsContent div{
+
+    /* .aboutContent is in line 259 with .mainContent */
+
+    /* #about img is in line on 264 with main img */
+
+    .aboutContent div, .skillsContent div, .educationContent div{
         width: 250px;
     }
     
-    .aboutContent div:first-child{        
+    .aboutContent div:first-child, .educationContent div:first-child{        
         margin-bottom: 50px;
     }
 
-    .aboutContent h2, .skillsContent h2{
+    .aboutContent h2, .skillsContent h2, .educationContent h2{
         font-size: 35px;
         font-weight: 500;
         margin: 0;
     }
     
-    .aboutContent p, .skillsContent p{
+    .aboutContent p, .skillsContent p, .educationContent p{
         font-size: 18px;
         font-weight: 500;
         margin: 0;
     }
+
+    /* .skillsContent is in line on 259 with .mainContent */
+    /* .skillsContent div is in line on 282 with .aboutContent */
+    /* .skillsContent h2 is in line no 290 with .aboutContent h2 */
+    /* .skillsContent p is in line no 296 with .aboutContent p */
 
     #skillsIcon{
         grid-template-columns: repeat(3, auto);
@@ -295,5 +324,12 @@ main p span{
     #skillsIcon img{
         width: 66px;
     }
+
+    /* .educationContent is in line no 270 with .mainContent */
+    /* #education img is in line no 275 with main img */
+    /* .educationContent div is in line no 293 with .aboutContent div */
+    /* .educationContent div:first-child is in line no 297 with .aboutContent div:first-child */
+    /* .educationContent h2 is in line no 301 with .aboutContent h2 */
+    /* .educationContent p is in line no 307 with .aboutContent p */
     
 }
