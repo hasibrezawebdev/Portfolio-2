@@ -1,4 +1,4 @@
-let nav = document.querySelector("nav");
+
 let navUl= document.querySelector("#navUl");
 let menuIcon = document.querySelector("#menuIcon");
 let mobileNav = document.querySelector("#mobileNav").style;
@@ -8,7 +8,6 @@ let skills = document.querySelector("#skl");
 let education = document.querySelector("#edu");
 
 function navBarToggle(){
-    nav.classList.toggle("toggleClass");
     navUl.classList.toggle("toggleClass");
     if (mobileNav.display === "flex") {
       mobileNav.display = "none";

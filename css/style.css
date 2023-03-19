@@ -54,7 +54,10 @@ nav ul div li{
 
 nav li:hover{
     background: #EE2C29;
+    transition: all 0.8s ease;
 }
+
+
 
 .spaceForNav{
     width: 100%;
@@ -176,6 +179,7 @@ main p span{
         padding: 5px 30px;
         margin: 10px 0;
         border-radius: 30px;
+        -webkit-text-stroke: 1px #000;
     }        
     #hm{
         position: fixed;
