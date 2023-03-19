@@ -16,7 +16,6 @@ function navBarToggle(){
     }
 }
 function removeClass(){
-    nav.classList.remove("toggleClass");
     navUl.classList.remove("toggleClass");
     if (mobileNav.display === "flex") {
       mobileNav.display = "none";
