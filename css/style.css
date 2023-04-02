@@ -167,6 +167,7 @@ main p span{
 #projects{
     background: none;
     padding-bottom: 50px;
+    /* all the other part are in line no 64 in main */
 }
 
 #projects h2{
