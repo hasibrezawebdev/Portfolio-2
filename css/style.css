@@ -65,7 +65,7 @@ nav li:hover{
     height: 80px;
 }
 
-main, #about, #skills, #education,#projects {
+main, #about, #skills, #education,#projects, #contact {
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -79,7 +79,7 @@ main, #about, #skills, #education,#projects {
 
 }
 
-.mainContent, .aboutContent, .skillsContent, .educationContent{
+.mainContent, .aboutContent, .skillsContent, .educationContent, .contactContent{
     max-width: 1280px;
     width: 100%;
     display: grid;
@@ -89,7 +89,7 @@ main, #about, #skills, #education,#projects {
 
 }
 
-main img, #about img, #education img{
+main img, #about img, #education img, #contact img{
     width: 450px;
 }
 
@@ -103,7 +103,7 @@ main p span{
     border-radius: 25px;
 }
 
-#about, #education{
+#about, #education, #contact{
     background: #FE6F6D;
     /* all the other part are in line no 64 in main */
 }
@@ -113,19 +113,19 @@ main p span{
 /* .aboutContent is in line no 78 with .mainContent */
 
 
-.aboutContent div, .skillsContent div, .educationContent div{
+.aboutContent div, .skillsContent div, .educationContent div, .contactContent div{
     width: 450px;
     text-align: right;
     color: #ffffff;
 }
 
-.aboutContent h2, .skillsContent h2, .educationContent h2{
+.aboutContent h2, .skillsContent h2, .educationContent h2, .contactContent h2{
     font-size: 55px;
     font-weight: 500;
     margin: 0;
 }
 
-.aboutContent p, .skillsContent p, .educationContent p{
+.aboutContent p, .skillsContent p, .educationContent p, .contactContent p{
     font-size: 27px;
     font-weight: 500;
     margin: 0;
@@ -166,6 +166,7 @@ main p span{
 
 #projects{
     background: none;
+    padding-bottom: 50px;
     /* all the other part are in line no 64 in main */
 }
 
@@ -270,6 +271,22 @@ main p span{
     padding-right: 10px;
 }
 
+.contactContent div{
+    text-align: left;
+}
+
+.contactContent p{
+    margin-bottom: 20px;
+}
+
+#contactIcons a{
+    padding-right: 10px;
+}
+
+#contactIcons img{
+    width: 50px;
+}
+
 @media screen and (max-width: 979px) {
     
     nav{
@@ -352,7 +369,7 @@ main p span{
         background-size: cover;
         background-position: center top;
     }
-    .aboutContent div:first-child, .skillsContent div, .educationContent div:first-child{
+    .aboutContent div:first-child, .skillsContent div, .educationContent div:first-child, .contactContent div{
         margin-bottom: 50px;
         text-align: center;
     }
@@ -390,12 +407,12 @@ main p span{
         height: 80px;
     }
 
-    .mainContent, .aboutContent, .skillsContent, .educationContent{
+    .mainContent, .aboutContent, .skillsContent, .educationContent, .contactContent{
         grid-template-columns: 100%;
     
     }
     
-    main img, #about img, #education img{
+    main img, #about img, #education img, #contact img{
         width: 250px;
     }
     
@@ -413,7 +430,7 @@ main p span{
 
     /* #about img is in line on 264 with main img */
 
-    .aboutContent div, .skillsContent div, .educationContent div{
+    .aboutContent div, .skillsContent div, .educationContent div, .contactContent div{
         width: 250px;
     }
     
@@ -421,13 +438,13 @@ main p span{
         margin-bottom: 50px;
     }
 
-    .aboutContent h2, .skillsContent h2, .educationContent h2{
+    .aboutContent h2, .skillsContent h2, .educationContent h2, .contactContent h2{
         font-size: 35px;
         font-weight: 500;
         margin: 0;
     }
     
-    .aboutContent p, .skillsContent p, .educationContent p{
+    .aboutContent p, .skillsContent p, .educationContent p, .contactContent p{
         font-size: 18px;
         font-weight: 500;
         margin: 0;
@@ -458,5 +475,13 @@ main p span{
     #projects h2{
         font-size: 35px;
         font-weight: 500;
+    }
+
+    .contactContent p{
+        margin-bottom: 15px;
+    }
+
+    #contactIcons img{
+        width: 30px;
     }
 }

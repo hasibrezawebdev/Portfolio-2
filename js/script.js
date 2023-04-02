@@ -7,6 +7,7 @@ let about = document.querySelector("#abt");
 let skills = document.querySelector("#skl");
 let education = document.querySelector("#edu");
 let works = document.querySelector("#works");
+let contact = document.querySelector("#cont");
 
 function navBarToggle(){
     navUl.classList.toggle("toggleClass");
@@ -29,3 +30,4 @@ about.addEventListener("click", removeClass);
 skills.addEventListener("click", removeClass);
 education.addEventListener("click", removeClass);
 works.addEventListener("click", removeClass);
+contact.addEventListener("click", removeClass);
