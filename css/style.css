@@ -20,7 +20,8 @@ nav{
     margin: 0;
     display: flex;
     align-items: center;
-    position: fixed;
+    position: fixed;        
+    z-index: 2;
 }
 
 #menuIcon{
@@ -64,7 +65,7 @@ nav li:hover{
     height: 80px;
 }
 
-main, #about, #skills, #education {
+main, #about, #skills, #education,#projects {
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -163,6 +164,110 @@ main p span{
 /* .educationContent h2 is in line no 118 with .aboutContent h2 */
 /* .educationContent p is in line no 124 with .aboutContent p */
 
+#projects{
+    background: none;
+    padding-bottom: 50px;
+}
+
+#projects h2{
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.projectContent{
+    max-width: 1280px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.projectElement{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    border-radius: 15px;
+}
+
+#proj1{
+    background: url(../img/Project/todo-list-generator-by-md.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#proj2{
+    background: url(../img/Project/unit-converter-by-md.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#proj3{
+    background: url(../img/Project/password-generator-by-md.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#proj4{
+    background: url(../img/Project/cricket-score-counter-by-md.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#proj5{
+    background: url(../img/Project/mdhasibreza.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#proj6{
+    background: url(../img/Project/css-image-angry-bird.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#proj7{
+    background: url(../img/Project/css-image-doramon.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#proj8{
+    background: url(../img/Project/css-image-camera.netlify.app_.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projText{
+    width: 100%;
+    height: 137px;
+    padding: 10px;
+    position: relative;
+    top: 110px;
+    background: #fe6f6dc9;
+    backdrop-filter: saturate(180%) blur(10px);
+    transition: .5s;
+    color: #fff;
+    z-index: 1;
+}
+
+.projectElement:hover .projText{
+    top: 0px;
+    
+}
+
+.projText h3{
+    margin: 0;
+    font-weight: 300;
+}
+.projText a{
+    padding-right: 10px;
+}
+
 @media screen and (max-width: 979px) {
     
     nav{
@@ -186,6 +291,7 @@ main p span{
         background: #fe6f6dc9;
         backdrop-filter: saturate(180%) blur(10px);
         border-radius: 0 0 60% 0;
+        z-index: 2;
     }
     
     #hm li:hover{
@@ -213,7 +319,8 @@ main p span{
         padding: 25px 40px;
         background: #fe6f6dc9;
         backdrop-filter: saturate(180%) blur(10px);
-        border-radius: 0 0 0 80% ;
+        border-radius: 0 0 0 80% ;        
+        z-index: 2;
         
     }
     #menuIcon img{
@@ -346,4 +453,8 @@ main p span{
     /* .educationContent h2 is in line no 301 with .aboutContent h2 */
     /* .educationContent p is in line no 307 with .aboutContent p */
     
+    #projects h2{
+        font-size: 35px;
+        font-weight: 500;
+    }
 }
